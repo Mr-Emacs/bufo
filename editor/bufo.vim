@@ -5,12 +5,6 @@ if exists("b:current_syntax")
   finish
 endif
 
-" Clear any previous highlight
-syn clear
-hi clear
-
-colorscheme torte
-
 syn match bufoIdentifier display "_*[a-z][a-zA-Z0-9_]*"
 syn match bufoUserType display "_*[A-Z][a-zA-Z0-9_]\+"
 syn match bufoFunction display "\zs\(\w*\)*\s*\ze("
